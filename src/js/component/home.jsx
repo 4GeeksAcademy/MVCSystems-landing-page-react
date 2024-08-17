@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
-import Jumbotton from "./jumbotton";
+import Jumbotron from "./jumbotron";
 import Gridcards from "./gridcards";
 import Footer from "./footer";
 
@@ -9,14 +9,17 @@ import Footer from "./footer";
 //create your first component
 const Home = () => {
   return (
-    <div id="app">
+    <>
       <Navbar />
-      <div className="container">
-        <Jumbotton />
-        <Gridcards />
+      <div id="app">
+        <div className="container">
+          <Jumbotron />
+          <Gridcards />
+        </div>
+        <Footer />
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
