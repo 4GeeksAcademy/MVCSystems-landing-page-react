@@ -10,7 +10,7 @@ const Card = ({ imgSrc, imgAlt, title, text, buttonText }) => {
           <h5 className="card-title d-flex justify-content-center">{title}</h5>
           <p className="card-text">{text}</p>
         </div>
-        <div className="card-footer">
+        <div className="card-footer d-flex justify-content-center">
           <button type="button" className="btn btn-primary">
             {buttonText}
           </button>
